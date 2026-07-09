@@ -1,74 +1,207 @@
-# IndicSpeak — Tutor 🇮🇳
+# IndicSpeak - AI Powered Indian Language Learning Chatbot
 
-An AI-powered language tutor for Indian languages built with React, TypeScript, and Google Gemini AI.
+> Learn Indian languages through your native language using AI-powered conversations, pronunciation practice, and voice interaction.
 
-## Features
+---
 
-- 🗣️ **Pronunciation Teacher** — Get exact translations and pronunciations for any phrase in supported Indian languages
-- 📚 **Level-based Learning** — Beginner, Intermediate, and Advanced educational content
-- 🔥 **Firebase Integration** — Secure authentication and Firestore database
-- 🌐 **Multi-language Support** — Hindi, Tamil, Telugu, Kannada, Malayalam, Bengali, Gujarati, Marathi, Punjabi, and more
-- 🎯 **Vocabulary Lessons** — Learn contextual vocabulary including everyday phrases and meal-time language
+# 🌟 Overview
 
-## Project Structure
+**IndicSpeak** is an AI-powered multilingual language learning chatbot designed to help users learn Indian languages in an interactive and personalized way. Unlike traditional language learning platforms that rely heavily on English, IndicSpeak enables users to learn a target language through their own native language, making learning more inclusive and accessible.
 
-```
-IndicSpeak---Tutor/
-├── frontend/          # React + TypeScript + Vite frontend
+The application leverages Google's Gemini AI to generate conversational responses, provide language explanations, and assist users in improving pronunciation through voice-based practice.
+
+---
+
+# ✨ Features
+
+* 🌐 Learn multiple Indian languages
+* 🤖 AI-powered conversational language tutor
+* 🌍 Native language-based learning
+* 📝 Structured responses including:
+
+  * Target Language
+  * Transliteration (Romanized)
+  * English Meaning
+  * Native Language Explanation
+* 🎤 Voice Input (Speech-to-Text)
+* 🔊 Pronunciation using Text-to-Speech
+* 🎯 Pronunciation Practice & Feedback
+* ⌨️ Native Language Virtual Keyboard
+* 💬 Interactive Chat Interface
+* 📚 Language-specific conversations
+* 👤 Google & Email Authentication (Firebase)
+* 💾 Chat History Support
+* 📱 Responsive UI for Desktop and Mobile
+
+---
+
+# 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* TypeScript
+* Vite
+* Tailwind CSS
+* shadcn/ui
+
+### AI
+
+* Google Gemini API
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database & Authentication
+
+* Firebase Authentication
+* Cloud Firestore
+
+### Voice Features
+
+* Web Speech API
+* Speech Recognition API
+* Speech Synthesis API
+
+### Deployment
+
+* Netlify / Vercel
+
+---
+
+# 🚀 How It Works
+
+1. User signs in using Google or Email.
+2. Selects their native language.
+3. Chooses the language they want to learn.
+4. Starts chatting with the AI tutor.
+5. Receives responses in:
+
+   * Target Language
+   * Transliteration
+   * English
+   * Native Language
+6. Practices pronunciation using voice input.
+7. Listens to correct pronunciation.
+8. Tracks conversations through chat history.
+
+---
+
+# 📂 Project Structure
+
+```text
+IndicSpeak/
+│
+├── frontend/
 │   ├── src/
-│   │   ├── App.tsx        # Main application component
-│   │   ├── firebase.ts    # Firebase configuration
-│   │   ├── types.ts       # TypeScript type definitions
-│   │   ├── index.css      # Global styles
-│   │   └── services/      # API and AI service handlers
-│   ├── index.html
-│   ├── vite.config.ts
-│   └── package.json
-└── backend/           # Node.js Express backend
-    ├── server.js      # Express server with Gemini AI integration
-    └── package.json
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── hooks/
+│   └── assets/
+│
+├── backend/
+│   ├── routes/
+│   ├── controllers/
+│   ├── services/
+│   ├── middleware/
+│   └── server.js
+│
+├── firebase/
+│
+├── package.json
+└── README.md
 ```
 
-## Setup & Installation
+---
 
-### Prerequisites
-- Node.js >= 18
-- npm >= 9
-- A Google AI Studio API key (Gemini)
-- Firebase project
+# ⚙️ Installation
 
-### Frontend Setup
+Clone the repository
 
 ```bash
-cd frontend
-cp .env.example .env
-# Fill in your API keys in .env
+git clone https://github.com/yourusername/IndicSpeak.git
+```
+
+Navigate to the project
+
+```bash
+cd IndicSpeak
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the frontend
+
+```bash
+npm run dev
+```
+
+Run the backend
+
+```bash
+cd backend
 npm install
 npm run dev
 ```
 
-### Backend Setup
+---
 
-```bash
-cd backend
-cp .env.example .env
-# Fill in your GEMINI_API_KEY in .env
-npm install
-node server.js
+# 🔑 Environment Variables
+
+Create a `.env` file and add:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+FIREBASE_API_KEY=your_firebase_api_key
+FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
 ```
 
-## Tech Stack
+---
 
-- **Frontend**: React 18, TypeScript, Vite, Firebase SDK
-- **Backend**: Node.js, Express, Google Generative AI (Gemini)
-- **Database**: Firebase Firestore
-- **Auth**: Firebase Authentication
-- **AI**: Google Gemini API via AI Studio
+# 🎯 Future Enhancements
 
-## App Link
+* Support for foreign languages
+* Personalized learning roadmap
+* Gamification and achievements
+* Progress tracking dashboard
+* AI-powered vocabulary revision
+* Offline learning support
+* Community learning features
+* Advanced pronunciation scoring
 
-🔗 [Live App on AI Studio](https://ai.studio/apps/94c2096e-774d-4961-a095-f47747313a35)
+---
 
-## License
+# 📸 Screenshots
 
-MIT
+Add screenshots of:
+
+* Login Page
+* Language Selection
+* Chat Interface
+* Pronunciation Practice
+* Voice Input
+* Settings Page
+
+---
+
+# 👨‍💻 Author
+
+**Kavinila S**
+
+---
+
+# 📄 License
+
+This project is intended for educational and portfolio purposes.
+
+---
+
+
