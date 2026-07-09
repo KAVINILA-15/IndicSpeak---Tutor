@@ -1,0 +1,7 @@
+{
+  "name": "IndicSpeak 2",
+  "description": "An advanced conversational AI language learning assistant focused on Indian languages, featuring voice interaction, pronunciation feedback, and context-aware communication.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
